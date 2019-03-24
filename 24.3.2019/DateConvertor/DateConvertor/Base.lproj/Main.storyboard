@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DateConvertor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ja-0L-MPT">
+                                <rect key="frame" x="19" y="328" width="337" height="101.5"/>
+                                <string key="text">Label Label  Label  Label Label  Label Label Label  Label Label Label  Label Label Label  Label Label Label  Label Label Label  Label Label Label  Label Label Label  Label Label Label  Label Label Label  Label </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SjH-o6-9WI">
+                                <rect key="frame" x="16" y="36" width="343" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="gB9-Fd-4dO"/>
+                                </connections>
+                            </segmentedControl>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Rz5-Lv-d3b">
+                                <rect key="frame" x="0.0" y="88" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="575142017.53386199">
+                                    <!--2019-03-24 17:40:17 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePickerAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Erf-y8-nQN"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rz5-Lv-d3b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Se-Of-srn"/>
+                            <constraint firstItem="SjH-o6-9WI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2xl-ef-lzR"/>
+                            <constraint firstItem="Rz5-Lv-d3b" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8UQ-ff-qkj"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0ja-0L-MPT" secondAttribute="trailing" constant="8" id="IqW-lB-qic"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SjH-o6-9WI" secondAttribute="trailing" constant="16" id="SCX-ss-zgS"/>
+                            <constraint firstItem="Rz5-Lv-d3b" firstAttribute="top" secondItem="SjH-o6-9WI" secondAttribute="bottom" constant="24" id="SGQ-B6-p0G"/>
+                            <constraint firstItem="0ja-0L-MPT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZCc-NH-ABQ"/>
+                            <constraint firstItem="0ja-0L-MPT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="cqR-qW-e1U"/>
+                            <constraint firstItem="SjH-o6-9WI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="e2W-0J-Zd5"/>
+                            <constraint firstItem="0ja-0L-MPT" firstAttribute="top" secondItem="Rz5-Lv-d3b" secondAttribute="bottom" constant="24" id="eEG-pb-YU1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="Rz5-Lv-d3b" id="dMo-Vm-XoH"/>
+                        <outlet property="label" destination="0ja-0L-MPT" id="vhi-UL-oqx"/>
+                        <outlet property="segmentedControl" destination="SjH-o6-9WI" id="T34-c8-Udj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="25.637181409295355"/>
+        </scene>
+    </scenes>
+</document>
