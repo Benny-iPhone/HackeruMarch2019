@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GenderAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="type a name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iIr-vO-NKC">
+                                <rect key="frame" x="16" y="36" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4K-z6-col">
+                                <rect key="frame" x="138" y="82" width="99" height="30"/>
+                                <state key="normal" title="Check Gender"/>
+                                <connections>
+                                    <action selector="checGenderAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="khP-Y5-b9g"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="VA1-qp-fKg">
+                                <rect key="frame" x="102" y="87" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="t4K-z6-col" firstAttribute="leading" secondItem="VA1-qp-fKg" secondAttribute="trailing" constant="16" id="6yu-TY-j94"/>
+                            <constraint firstItem="VA1-qp-fKg" firstAttribute="centerY" secondItem="t4K-z6-col" secondAttribute="centerY" id="9B1-Yr-gSK"/>
+                            <constraint firstItem="iIr-vO-NKC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cvM-FK-462"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iIr-vO-NKC" secondAttribute="trailing" constant="16" id="e35-Zc-gK8"/>
+                            <constraint firstItem="t4K-z6-col" firstAttribute="centerX" secondItem="iIr-vO-NKC" secondAttribute="centerX" id="eFz-ZH-67y"/>
+                            <constraint firstItem="t4K-z6-col" firstAttribute="top" secondItem="iIr-vO-NKC" secondAttribute="bottom" constant="16" id="eVx-oP-I1a"/>
+                            <constraint firstItem="iIr-vO-NKC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="jPr-WH-DXf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="indicatorView" destination="VA1-qp-fKg" id="XSu-ud-x2i"/>
+                        <outlet property="textField" destination="iIr-vO-NKC" id="6MB-dR-1ox"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

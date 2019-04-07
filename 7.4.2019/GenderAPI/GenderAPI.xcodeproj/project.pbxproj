@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B8D4189DF89E37E6191C744 /* Pods_GenderAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CC39476BF5908CFA98230D /* Pods_GenderAPI.framework */; };
+		6D1757D7225A6D9200D0E2AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1757D6225A6D9200D0E2AF /* AppDelegate.swift */; };
+		6D1757D9225A6D9200D0E2AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1757D8225A6D9200D0E2AF /* ViewController.swift */; };
+		6D1757DC225A6D9200D0E2AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D1757DA225A6D9200D0E2AF /* Main.storyboard */; };
+		6D1757DE225A6D9400D0E2AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D1757DD225A6D9400D0E2AF /* Assets.xcassets */; };
+		6D1757E1225A6D9400D0E2AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D1757DF225A6D9400D0E2AF /* LaunchScreen.storyboard */; };
+		6D5F1EC9225A728000DE6837 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5F1EC8225A728000DE6837 /* APIManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6D1757D3225A6D9200D0E2AF /* GenderAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenderAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D1757D6225A6D9200D0E2AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6D1757D8225A6D9200D0E2AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6D1757DB225A6D9200D0E2AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D1757DD225A6D9400D0E2AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D1757E0225A6D9400D0E2AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D1757E2225A6D9400D0E2AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D25763D17CAEE2AC2EFC5A2 /* Pods-GenderAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenderAPI.debug.xcconfig"; path = "Target Support Files/Pods-GenderAPI/Pods-GenderAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		6D5F1EC8225A728000DE6837 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		B8CC39476BF5908CFA98230D /* Pods_GenderAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenderAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3535FDA3F21B14A6C55579A /* Pods-GenderAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenderAPI.release.xcconfig"; path = "Target Support Files/Pods-GenderAPI/Pods-GenderAPI.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D1757D0225A6D9200D0E2AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B8D4189DF89E37E6191C744 /* Pods_GenderAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FFD78A9D7D6543F5DEF5214 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8CC39476BF5908CFA98230D /* Pods_GenderAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D1757CA225A6D9200D0E2AF = {
+			isa = PBXGroup;
+			children = (
+				6D1757D5225A6D9200D0E2AF /* GenderAPI */,
+				6D1757D4225A6D9200D0E2AF /* Products */,
+				7CD045F99FB0A2EEFCC94B88 /* Pods */,
+				4FFD78A9D7D6543F5DEF5214 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6D1757D4225A6D9200D0E2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D1757D3225A6D9200D0E2AF /* GenderAPI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D1757D5225A6D9200D0E2AF /* GenderAPI */ = {
+			isa = PBXGroup;
+			children = (
+				6D5F1EC7225A727100DE6837 /* Model */,
+				6D1757D6225A6D9200D0E2AF /* AppDelegate.swift */,
+				6D1757D8225A6D9200D0E2AF /* ViewController.swift */,
+				6D1757DA225A6D9200D0E2AF /* Main.storyboard */,
+				6D1757DD225A6D9400D0E2AF /* Assets.xcassets */,
+				6D1757DF225A6D9400D0E2AF /* LaunchScreen.storyboard */,
+				6D1757E2225A6D9400D0E2AF /* Info.plist */,
+			);
+			path = GenderAPI;
+			sourceTree = "<group>";
+		};
+		6D5F1EC7225A727100DE6837 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D5F1EC8225A728000DE6837 /* APIManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7CD045F99FB0A2EEFCC94B88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D25763D17CAEE2AC2EFC5A2 /* Pods-GenderAPI.debug.xcconfig */,
+				F3535FDA3F21B14A6C55579A /* Pods-GenderAPI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D1757D2225A6D9200D0E2AF /* GenderAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D1757E5225A6D9400D0E2AF /* Build configuration list for PBXNativeTarget "GenderAPI" */;
+			buildPhases = (
+				7F6BC7B59B7F511FC2297B13 /* [CP] Check Pods Manifest.lock */,
+				6D1757CF225A6D9200D0E2AF /* Sources */,
+				6D1757D0225A6D9200D0E2AF /* Frameworks */,
+				6D1757D1225A6D9200D0E2AF /* Resources */,
+				FED163A78C0D7387CC3B1402 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GenderAPI;
+			productName = GenderAPI;
+			productReference = 6D1757D3225A6D9200D0E2AF /* GenderAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D1757CB225A6D9200D0E2AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = hackeru;
+				TargetAttributes = {
+					6D1757D2225A6D9200D0E2AF = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 6D1757CE225A6D9200D0E2AF /* Build configuration list for PBXProject "GenderAPI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D1757CA225A6D9200D0E2AF;
+			productRefGroup = 6D1757D4225A6D9200D0E2AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D1757D2225A6D9200D0E2AF /* GenderAPI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D1757D1225A6D9200D0E2AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D1757E1225A6D9400D0E2AF /* LaunchScreen.storyboard in Resources */,
+				6D1757DE225A6D9400D0E2AF /* Assets.xcassets in Resources */,
+				6D1757DC225A6D9200D0E2AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F6BC7B59B7F511FC2297B13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GenderAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FED163A78C0D7387CC3B1402 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GenderAPI/Pods-GenderAPI-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GenderAPI/Pods-GenderAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D1757CF225A6D9200D0E2AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D5F1EC9225A728000DE6837 /* APIManager.swift in Sources */,
+				6D1757D9225A6D9200D0E2AF /* ViewController.swift in Sources */,
+				6D1757D7225A6D9200D0E2AF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6D1757DA225A6D9200D0E2AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D1757DB225A6D9200D0E2AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6D1757DF225A6D9400D0E2AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D1757E0225A6D9400D0E2AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D1757E3225A6D9400D0E2AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6D1757E4225A6D9400D0E2AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D1757E6225A6D9400D0E2AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D25763D17CAEE2AC2EFC5A2 /* Pods-GenderAPI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GenderAPI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lol.GenderAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D1757E7225A6D9400D0E2AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3535FDA3F21B14A6C55579A /* Pods-GenderAPI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GenderAPI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lol.GenderAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D1757CE225A6D9200D0E2AF /* Build configuration list for PBXProject "GenderAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D1757E3225A6D9400D0E2AF /* Debug */,
+				6D1757E4225A6D9400D0E2AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D1757E5225A6D9400D0E2AF /* Build configuration list for PBXNativeTarget "GenderAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D1757E6225A6D9400D0E2AF /* Debug */,
+				6D1757E7225A6D9400D0E2AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D1757CB225A6D9200D0E2AF /* Project object */;
+}
