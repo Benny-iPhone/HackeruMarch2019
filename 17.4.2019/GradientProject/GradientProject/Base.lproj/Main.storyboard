@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UCz-nO-uOG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="bu8-QY-u6D">
+            <objects>
+                <viewController id="UCz-nO-uOG" customClass="WelcomeViewController" customModule="GradientProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="maM-hH-LIL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iwe-uk-E3a" customClass="BackgroundView" customModule="GradientProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBn-7z-bol">
+                                <rect key="frame" x="166.5" y="80" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iwe-uk-E3a" firstAttribute="top" secondItem="maM-hH-LIL" secondAttribute="top" id="2Ua-gD-vLP"/>
+                            <constraint firstItem="TBn-7z-bol" firstAttribute="top" secondItem="sXW-tQ-R0F" secondAttribute="top" constant="60" id="DO5-Cg-mR3"/>
+                            <constraint firstItem="sXW-tQ-R0F" firstAttribute="trailing" secondItem="iwe-uk-E3a" secondAttribute="trailing" id="OIt-xq-4jP"/>
+                            <constraint firstItem="TBn-7z-bol" firstAttribute="centerX" secondItem="sXW-tQ-R0F" secondAttribute="centerX" id="Pch-gl-rIT"/>
+                            <constraint firstAttribute="bottom" secondItem="iwe-uk-E3a" secondAttribute="bottom" id="fsf-4F-yLf"/>
+                            <constraint firstItem="iwe-uk-E3a" firstAttribute="leading" secondItem="sXW-tQ-R0F" secondAttribute="leading" id="khK-gf-cYK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sXW-tQ-R0F"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="TBn-7z-bol" id="bJX-5u-KaA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ONj-7i-plx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="239" y="129"/>
+        </scene>
+    </scenes>
+</document>

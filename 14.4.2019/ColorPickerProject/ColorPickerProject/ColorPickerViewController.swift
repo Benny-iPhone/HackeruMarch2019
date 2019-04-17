@@ -18,7 +18,8 @@ import ChromaColorPicker
 class ColorPickerViewController: UIViewController {
     
     var delegate : ColorPickerViewControllerDelegate?
-
+    var defaultColor : UIColor?
+    
     @IBOutlet weak var colorPicker: ChromaColorPicker!
     
     class func createVC() -> ColorPickerViewController{
@@ -28,7 +29,8 @@ class ColorPickerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        colorPicker.adjustToColor(defaultColor ?? .purple)
+        
         // Do any additional setup after loading the view.
     }
     
