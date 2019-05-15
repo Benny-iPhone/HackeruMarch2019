@@ -87,6 +87,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Tap" image="icons8-tap" id="H4D-Fr-QtN"/>
                     <connections>
+                        <outlet property="centerXLayout" destination="w69-q4-3zQ" id="Ax4-6D-uGt"/>
+                        <outlet property="centerYLayout" destination="4IN-hj-Azr" id="gdN-yu-O4F"/>
                         <outlet property="myView" destination="4UL-cv-glw" id="m2J-ot-JzQ"/>
                         <outlet property="singleTapGesture" destination="lcN-6d-jSa" id="nUL-fu-ZAn"/>
                         <outletCollection property="myViewLayouts" destination="pH3-RF-zrv" collectionClass="NSMutableArray" id="3tj-nW-5IJ"/>
@@ -143,7 +145,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-878" y="27"/>
+            <point key="canvasLocation" x="-1202" y="-78"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="xUG-B7-az1">
@@ -151,6 +153,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="WZE-fG-qPB" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UcA-Bh-bIz">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

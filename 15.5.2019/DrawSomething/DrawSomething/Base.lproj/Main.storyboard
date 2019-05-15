@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sxj-gY-tlu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Draw Something-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DrawSomething" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2as-jT-hnb" customClass="DrawView" customModule="DrawSomething" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kbh-El-YW3">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <subviews>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="bT1-p8-46j">
+                                        <rect key="frame" x="273" y="7.5" width="94" height="29"/>
+                                        <connections>
+                                            <action selector="stepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="cvg-bP-WoW"/>
+                                        </connections>
+                                    </stepper>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8Q-Fb-Gpz">
+                                        <rect key="frame" x="257" y="11.5" width="8" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="OBm-6V-U9J">
+                                        <rect key="frame" x="8" y="8" width="241" height="29"/>
+                                        <segments>
+                                            <segment title="Black"/>
+                                            <segment title="Red"/>
+                                            <segment title="Blue"/>
+                                            <segment title="Green"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="colorSegmentedControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="MkX-86-WNg"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="P8Q-Fb-Gpz" firstAttribute="centerY" secondItem="bT1-p8-46j" secondAttribute="centerY" id="92H-8Z-LtG"/>
+                                    <constraint firstAttribute="trailing" secondItem="bT1-p8-46j" secondAttribute="trailing" constant="8" id="BxH-kM-OSD"/>
+                                    <constraint firstItem="bT1-p8-46j" firstAttribute="leading" secondItem="P8Q-Fb-Gpz" secondAttribute="trailing" constant="8" id="Sat-Yk-aRU"/>
+                                    <constraint firstItem="P8Q-Fb-Gpz" firstAttribute="leading" secondItem="OBm-6V-U9J" secondAttribute="trailing" constant="8" id="cFo-aT-xBC"/>
+                                    <constraint firstItem="bT1-p8-46j" firstAttribute="centerY" secondItem="Kbh-El-YW3" secondAttribute="centerY" id="fRI-9B-Yzq"/>
+                                    <constraint firstItem="OBm-6V-U9J" firstAttribute="leading" secondItem="Kbh-El-YW3" secondAttribute="leading" constant="8" id="jMV-NJ-Zpl"/>
+                                    <constraint firstItem="OBm-6V-U9J" firstAttribute="centerY" secondItem="Kbh-El-YW3" secondAttribute="centerY" id="ll9-Et-d2g"/>
+                                    <constraint firstAttribute="height" constant="44" id="s2N-ZB-sbE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2as-jT-hnb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6Gm-mb-ccX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kbh-El-YW3" secondAttribute="trailing" id="FKo-rh-R8O"/>
+                            <constraint firstItem="Kbh-El-YW3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HQR-Ql-PyY"/>
+                            <constraint firstItem="Kbh-El-YW3" firstAttribute="top" secondItem="2as-jT-hnb" secondAttribute="bottom" id="VzV-3C-0dN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2as-jT-hnb" secondAttribute="trailing" id="XYE-hG-hUC"/>
+                            <constraint firstItem="Kbh-El-YW3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="pAR-Zj-N6q"/>
+                            <constraint firstItem="2as-jT-hnb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="smj-1j-K2m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Draw Something" id="Mjk-q8-J8R">
+                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="1Gh-or-Eyw">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="clearAction:" destination="BYZ-38-t0r" id="Tsg-Fg-pUC"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="llW-Hm-xOj">
+                            <connections>
+                                <action selector="shareAction:" destination="BYZ-38-t0r" id="jBd-82-TjF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="drawView" destination="2as-jT-hnb" id="kjk-jG-Z1e"/>
+                        <outlet property="stepperValueLabel" destination="P8Q-Fb-Gpz" id="ciE-2R-r12"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885.60000000000002" y="-566.26686656671666"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="V7w-qO-uij">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sxj-gY-tlu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zdg-rY-eQD">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XZ2-0R-NCl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iGv-tw-7Z1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-566.26686656671666"/>
+        </scene>
+    </scenes>
+</document>

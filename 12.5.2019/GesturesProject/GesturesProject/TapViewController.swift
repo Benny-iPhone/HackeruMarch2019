@@ -10,6 +10,9 @@ import UIKit
 
 class TapViewController: UIViewController {
 
+    @IBOutlet weak var centerYLayout: NSLayoutConstraint!
+    @IBOutlet weak var centerXLayout: NSLayoutConstraint!
+    
     @IBOutlet weak var singleTapGesture: UITapGestureRecognizer!
     @IBOutlet var myViewLayouts: [NSLayoutConstraint]!
     
@@ -51,6 +54,14 @@ class TapViewController: UIViewController {
     @IBAction func tapAction(_ sender: UITapGestureRecognizer) {
         
         let point : CGPoint = sender.location(in: self.view)
+        let actualCenterX = self.view.bounds.midX
+        let actualCenterY = self.view.bounds.midY
+        
+        let deltaX = point.x - actualCenterX
+        let deltaY = point.y - actualCenterY
+        
+        centerXLayout.constant = deltaX
+        centerYLayout.constant = deltaY
         
         let duration : TimeInterval = 0.7 //seconds
         
@@ -59,7 +70,8 @@ class TapViewController: UIViewController {
             //self?.myView.center = point
             
             guard let strongSelf = self else { return }
-            strongSelf.myView.center = point
+            //strongSelf.myView.center = point
+            strongSelf.view.layoutSubviews()
         }
         
         //unowned - a.k.a. "Trust me, I'm an engineer"
