@@ -1,0 +1,16 @@
+PODS:
+  - FRHyperLabel (1.0.4)
+
+DEPENDENCIES:
+  - FRHyperLabel
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FRHyperLabel
+
+SPEC CHECKSUMS:
+  FRHyperLabel: f4a127d5f8ffb211040554615e93f936d5a576a6
+
+PODFILE CHECKSUM: fac6c054a8e9378bd45ad30a3d9481c0a42c7022
+
+COCOAPODS: 1.6.1

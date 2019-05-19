@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Localizations
+
+  Created by hackeru on 19/05/2019.
+  Copyright © 2019 hackeru. All rights reserved.
+*/
+
+"key" = "value";
+"mainVC.titleLabel" = "Title Label";
+"greeting_format" = "Hello %@";
+"AppName" = "My app name";
+"mainVC.button.playAudio" = "Play Audio";

@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Localizations
+
+  Created by hackeru on 19/05/2019.
+  Copyright © 2019 hackeru. All rights reserved.
+*/
+
+"key" = "ערך";
+"mainVC.titleLabel" = "תווית כותרת";
+"greeting_format" = "שלום %@";
+"AppName" = "שם של האפליקציה";
+"mainVC.button.playAudio" = "נגן אודיו";

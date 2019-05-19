@@ -1,0 +1,6 @@
+framework module Pods_ClickableLabel {
+  umbrella header "Pods-ClickableLabel-umbrella.h"
+
+  export *
+  module * { export * }
+}
