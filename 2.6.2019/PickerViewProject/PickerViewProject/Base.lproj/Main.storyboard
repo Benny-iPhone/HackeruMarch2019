@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SKZ-mc-hIl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SingleCompViewController" customModule="PickerViewProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eBn-l1-dmj">
+                                <rect key="frame" x="0.0" y="20" width="375" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="pI9-qF-cMI"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="zOI-4S-9rO"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJE-ah-ZRT">
+                                <rect key="frame" x="166.5" y="276" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CJE-ah-ZRT" firstAttribute="centerX" secondItem="eBn-l1-dmj" secondAttribute="centerX" id="3gu-dz-n38"/>
+                            <constraint firstItem="eBn-l1-dmj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JDy-1b-7dn"/>
+                            <constraint firstItem="eBn-l1-dmj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="V8w-G2-gAY"/>
+                            <constraint firstItem="CJE-ah-ZRT" firstAttribute="top" secondItem="eBn-l1-dmj" secondAttribute="bottom" constant="40" id="d0Q-9j-3Qq"/>
+                            <constraint firstItem="eBn-l1-dmj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lGJ-tU-xEr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="5J3-y8-Mjw"/>
+                    <connections>
+                        <outlet property="label" destination="CJE-ah-ZRT" id="E6k-vO-fdR"/>
+                        <outlet property="pickerView" destination="eBn-l1-dmj" id="IJm-ak-Ymh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938" y="-358"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="6ed-wq-zDb">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="SKZ-mc-hIl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tpd-LQ-KeC">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="8RX-m8-A8l"/>
+                        <segue destination="4ch-V6-eXg" kind="relationship" relationship="viewControllers" id="xtA-gj-1mH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6OF-Xo-P7R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="26.53673163418291"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="PCX-hf-kOD">
+            <objects>
+                <viewController id="4ch-V6-eXg" customClass="DoubleCompViewController" customModule="PickerViewProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ndT-Pj-j2i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ACQ-T2-Tsq">
+                                <rect key="frame" x="0.0" y="20" width="375" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="4ch-V6-eXg" id="Edx-Qc-fVQ"/>
+                                    <outlet property="delegate" destination="4ch-V6-eXg" id="x9g-tB-EMA"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTn-Yu-YIJ">
+                                <rect key="frame" x="166.5" y="284" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ACQ-T2-Tsq" firstAttribute="trailing" secondItem="dPq-vR-GdS" secondAttribute="trailing" id="EBC-gM-p5R"/>
+                            <constraint firstItem="UTn-Yu-YIJ" firstAttribute="centerX" secondItem="ACQ-T2-Tsq" secondAttribute="centerX" id="EgW-bf-JTu"/>
+                            <constraint firstItem="UTn-Yu-YIJ" firstAttribute="top" secondItem="ACQ-T2-Tsq" secondAttribute="bottom" constant="48" id="PwL-Ua-83p"/>
+                            <constraint firstItem="ACQ-T2-Tsq" firstAttribute="leading" secondItem="dPq-vR-GdS" secondAttribute="leading" id="iM2-za-WCt"/>
+                            <constraint firstItem="ACQ-T2-Tsq" firstAttribute="top" secondItem="dPq-vR-GdS" secondAttribute="top" id="yQG-jo-ao1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dPq-vR-GdS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="L29-Qn-kFM"/>
+                    <connections>
+                        <outlet property="label" destination="UTn-Yu-YIJ" id="ysg-v8-cYi"/>
+                        <outlet property="pickerView" destination="ACQ-T2-Tsq" id="lIW-fs-WF7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="agD-VU-80p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="937" y="340"/>
+        </scene>
+    </scenes>
+</document>

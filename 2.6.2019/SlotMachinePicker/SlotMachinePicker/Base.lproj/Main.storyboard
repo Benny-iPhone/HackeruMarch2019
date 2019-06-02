@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Slot Machine View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SlotMachineViewController" customModule="SlotMachinePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bT5-OT-CTU">
+                                <rect key="frame" x="0.0" y="20" width="375" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGi-oD-atu">
+                                <rect key="frame" x="135.5" y="264" width="104" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <inset key="contentEdgeInsets" minX="24" minY="8" maxX="24" maxY="8"/>
+                                <state key="normal" title="Spin"/>
+                                <connections>
+                                    <action selector="spinAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D9v-qo-7hd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILv-0O-FR3">
+                                <rect key="frame" x="166.5" y="355" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bT5-OT-CTU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2Za-Nb-Jo5"/>
+                            <constraint firstItem="ILv-0O-FR3" firstAttribute="top" secondItem="NGi-oD-atu" secondAttribute="bottom" constant="40" id="UF5-w0-EmG"/>
+                            <constraint firstItem="NGi-oD-atu" firstAttribute="top" secondItem="bT5-OT-CTU" secondAttribute="bottom" constant="28" id="hF8-bL-ko5"/>
+                            <constraint firstItem="bT5-OT-CTU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hOQ-Qe-Sd1"/>
+                            <constraint firstItem="ILv-0O-FR3" firstAttribute="centerX" secondItem="NGi-oD-atu" secondAttribute="centerX" id="i22-WU-NNM"/>
+                            <constraint firstItem="bT5-OT-CTU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xPF-H8-l3F"/>
+                            <constraint firstItem="NGi-oD-atu" firstAttribute="centerX" secondItem="bT5-OT-CTU" secondAttribute="centerX" id="yzl-EO-LPK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="bT5-OT-CTU" id="8aT-oJ-Dxw"/>
+                        <outlet property="resultLabel" destination="ILv-0O-FR3" id="g5T-2c-pb6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
