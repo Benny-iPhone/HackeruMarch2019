@@ -28,7 +28,7 @@ class Router{
         
         let filename : String
         if didLogin{
-            filename = "Main"
+            filename = "Chat"//"Main"
         } else {
             filename = "Login"
         }
