@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="psP-aL-gHH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chat Rooms View Controller-->
+        <scene sceneID="UtY-02-u5z">
+            <objects>
+                <viewController id="UjU-VS-DBK" customClass="ChatRoomsViewController" customModule="HackerChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RBW-tR-d0a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZH8-wr-O2O">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="ev9-Xj-lGi" customClass="ChatRoomCell" customModule="HackerChat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ev9-Xj-lGi" id="HvX-TL-6WM">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fO1-lg-ZMq">
+                                                    <rect key="frame" x="0.0" y="111" width="375" height="1"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="Y8a-jM-ig1"/>
+                                                    </constraints>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ipb-Yt-vDJ">
+                                                    <rect key="frame" x="8" y="8" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="3Vm-dn-Lnp"/>
+                                                        <constraint firstAttribute="width" constant="100" id="zcc-T1-JMo"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3d-BE-2mW">
+                                                    <rect key="frame" x="120" y="8" width="44" height="21"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08r-qr-ODo">
+                                                    <rect key="frame" x="120" y="87" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="t3d-BE-2mW" firstAttribute="top" secondItem="ipb-Yt-vDJ" secondAttribute="top" id="5pB-ff-iBv"/>
+                                                <constraint firstItem="08r-qr-ODo" firstAttribute="leading" secondItem="t3d-BE-2mW" secondAttribute="leading" id="A46-ce-jgR"/>
+                                                <constraint firstItem="08r-qr-ODo" firstAttribute="bottom" secondItem="ipb-Yt-vDJ" secondAttribute="bottom" id="UOV-pV-OiK"/>
+                                                <constraint firstAttribute="bottom" secondItem="ipb-Yt-vDJ" secondAttribute="bottom" constant="8" id="W2b-7w-jHv"/>
+                                                <constraint firstItem="fO1-lg-ZMq" firstAttribute="leading" secondItem="HvX-TL-6WM" secondAttribute="leading" id="YV3-yL-O7U"/>
+                                                <constraint firstItem="fO1-lg-ZMq" firstAttribute="bottom" secondItem="ipb-Yt-vDJ" secondAttribute="bottom" constant="4" id="gj6-jW-No9"/>
+                                                <constraint firstAttribute="trailing" secondItem="fO1-lg-ZMq" secondAttribute="trailing" id="qpe-XC-fmy"/>
+                                                <constraint firstItem="ipb-Yt-vDJ" firstAttribute="top" secondItem="HvX-TL-6WM" secondAttribute="top" constant="8" id="v8X-Ij-Wld"/>
+                                                <constraint firstItem="ipb-Yt-vDJ" firstAttribute="leading" secondItem="HvX-TL-6WM" secondAttribute="leading" constant="8" id="vh2-6F-gVg"/>
+                                                <constraint firstItem="t3d-BE-2mW" firstAttribute="leading" secondItem="ipb-Yt-vDJ" secondAttribute="trailing" constant="12" id="yiy-R9-rxx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="08r-qr-ODo" id="yPt-5D-gFk"/>
+                                            <outlet property="nameLabel" destination="t3d-BE-2mW" id="iYt-Xa-Fec"/>
+                                            <outlet property="roomImageView" destination="ipb-Yt-vDJ" id="744-MF-lMK"/>
+                                            <segue destination="9PG-1V-a1Q" kind="show" id="ZsL-wh-8LR"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZH8-wr-O2O" firstAttribute="leading" secondItem="btz-9P-2YD" secondAttribute="leading" id="C8w-hl-L2y"/>
+                            <constraint firstItem="ZH8-wr-O2O" firstAttribute="top" secondItem="btz-9P-2YD" secondAttribute="top" id="F1N-PE-d2j"/>
+                            <constraint firstItem="btz-9P-2YD" firstAttribute="trailing" secondItem="ZH8-wr-O2O" secondAttribute="trailing" id="KNS-on-5gc"/>
+                            <constraint firstItem="btz-9P-2YD" firstAttribute="bottom" secondItem="ZH8-wr-O2O" secondAttribute="bottom" id="Kxf-LR-bfh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="btz-9P-2YD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OrS-gH-JCE">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="JiV-nz-Biv">
+                            <connections>
+                                <segue destination="Vnb-YC-VKi" kind="show" id="Z6I-FP-mGq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="ZH8-wr-O2O" id="vnK-qU-IGz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Tv-q2-OqH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="195.6521739130435"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="Wv3-KL-0p2">
+            <objects>
+                <viewController id="9PG-1V-a1Q" customClass="ChatViewController" customModule="HackerChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XjC-IR-N0Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Zz1-Qc-DxB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tuj-UT-5bb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1743" y="-45"/>
+        </scene>
+        <!--Create Chat Room View Controller-->
+        <scene sceneID="ala-zE-QMC">
+            <objects>
+                <viewController id="Vnb-YC-VKi" customClass="CreateChatRoomViewController" customModule="HackerChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Y6-gs-OYA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Chatroom Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jMm-oK-txh">
+                                <rect key="frame" x="16" y="80" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Describe your room" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bpe-6G-5KJ">
+                                <rect key="frame" x="16" y="126" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPX-iU-7kf">
+                                <rect key="frame" x="130.5" y="196" width="114" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Create"/>
+                                <connections>
+                                    <action selector="createChatRoom:" destination="Vnb-YC-VKi" eventType="touchUpInside" id="w8j-CZ-kkr"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fPn-zp-sAF">
+                                <rect key="frame" x="40" y="296" width="295" height="331"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WPX-iU-7kf" firstAttribute="centerX" secondItem="jMm-oK-txh" secondAttribute="centerX" id="2v3-qS-wik"/>
+                            <constraint firstItem="jMm-oK-txh" firstAttribute="leading" secondItem="bAz-ek-FD8" secondAttribute="leading" constant="16" id="BTc-Mm-zJ3"/>
+                            <constraint firstItem="Bpe-6G-5KJ" firstAttribute="top" secondItem="jMm-oK-txh" secondAttribute="bottom" constant="16" id="JLb-Ja-sKE"/>
+                            <constraint firstItem="fPn-zp-sAF" firstAttribute="leading" secondItem="bAz-ek-FD8" secondAttribute="leading" constant="40" id="LVN-vK-qfK"/>
+                            <constraint firstItem="WPX-iU-7kf" firstAttribute="top" secondItem="Bpe-6G-5KJ" secondAttribute="bottom" constant="40" id="QYo-em-kIA"/>
+                            <constraint firstItem="jMm-oK-txh" firstAttribute="top" secondItem="bAz-ek-FD8" secondAttribute="top" constant="16" id="VKQ-Wj-f8A"/>
+                            <constraint firstItem="bAz-ek-FD8" firstAttribute="trailing" secondItem="fPn-zp-sAF" secondAttribute="trailing" constant="40" id="bH8-IZ-Ky2"/>
+                            <constraint firstItem="Bpe-6G-5KJ" firstAttribute="trailing" secondItem="jMm-oK-txh" secondAttribute="trailing" id="hiU-uq-o6C"/>
+                            <constraint firstItem="bAz-ek-FD8" firstAttribute="bottom" secondItem="fPn-zp-sAF" secondAttribute="bottom" constant="40" id="nTq-CZ-k4u"/>
+                            <constraint firstItem="Bpe-6G-5KJ" firstAttribute="leading" secondItem="jMm-oK-txh" secondAttribute="leading" id="s2K-DA-mT5"/>
+                            <constraint firstItem="bAz-ek-FD8" firstAttribute="trailing" secondItem="jMm-oK-txh" secondAttribute="trailing" constant="16" id="tjg-VO-sDc"/>
+                            <constraint firstItem="fPn-zp-sAF" firstAttribute="top" secondItem="WPX-iU-7kf" secondAttribute="bottom" constant="40" id="y2U-vo-w1c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bAz-ek-FD8"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="Bpe-6G-5KJ" id="OFs-RH-fjm"/>
+                        <outlet property="imageView" destination="fPn-zp-sAF" id="kga-kd-h1u"/>
+                        <outlet property="nameTextField" destination="jMm-oK-txh" id="2xp-wv-wZF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HTu-OS-fT8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1850" y="608"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="p4j-Xp-XqB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="psP-aL-gHH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="56Z-wP-kZq">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UjU-VS-DBK" kind="relationship" relationship="rootViewController" id="RLp-eD-onN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PFq-qm-KvE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80.799999999999997" y="195.6521739130435"/>
+        </scene>
+    </scenes>
+</document>

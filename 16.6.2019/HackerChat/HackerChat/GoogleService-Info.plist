@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>433995144522-ms22p397p1f7v7ftj3lh5rc6c0g4pa45.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.433995144522-ms22p397p1f7v7ftj3lh5rc6c0g4pa45</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBYBFUMDD7NfvpGdl0RwYvCax1g8vCu2zQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>433995144522</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hackeru.HackerChat</string>
+	<key>PROJECT_ID</key>
+	<string>hackerchat-67a23</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hackerchat-67a23.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:433995144522:ios:06a80a631d9937d0</string>
+	<key>DATABASE_URL</key>
+	<string>https://hackerchat-67a23.firebaseio.com</string>
+</dict>
+</plist>
