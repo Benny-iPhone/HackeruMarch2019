@@ -64,7 +64,7 @@ extension ChatMessage : MessageType{
 
 extension ChatMessage : MediaItem{
     var url: URL? {
-        return info as? URL
+        return nil
     }
     
     var image: UIImage? {

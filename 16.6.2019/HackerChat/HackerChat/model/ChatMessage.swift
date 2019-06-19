@@ -21,10 +21,8 @@ struct ChatMessage{
     let mid : String //message id
     let uid : String //author id
     let uName : String //author name
-    var text : String? //text is exist
+    var text : String? //text if exist, or storage ref
     let date : Date //create date, stored as timestamp
-    
-    var info : Any? = nil
     
     init?(json : [String:Any]){
         guard let mid = json["mid"] as? String,
@@ -73,20 +71,6 @@ struct ChatMessage{
         get{
             return Storage.storage().reference().child("msg_images").child(text ?? "" )
         }
-    }
-    
-    func prepare(with callback : @escaping (_ info : Any?)->Void){
-        
-        switch type {
-        case .image:
-            storageRef.downloadURL { (url, error) in
-                callback(url)
-            }
-        default:
-            callback(nil)
-        }
-        
-        
     }
     
     mutating func save(imageData data : Data, callback : @escaping (Error?)->Void){

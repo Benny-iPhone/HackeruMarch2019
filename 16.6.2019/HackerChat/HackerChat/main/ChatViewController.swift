@@ -60,18 +60,25 @@ class ChatViewController: MessagesViewController{
         room.messagesDatabaseReference.queryOrdered(byChild: "date").observe(.childAdded) { [weak self](msgSnapshot) in
             guard let json = msgSnapshot.value as? [String:Any] else { return }
             
-            guard var msg = ChatMessage(json: json) else { return }
+            guard let msg = ChatMessage(json: json) else { return }
             //add message to UI
-            msg.prepare(with: { (info) in
-                msg.info = info
-                self?.messages.append(msg)
-                self?.messagesCollectionView.reloadData()
-
-            })
+            self?.messages.append(msg)
+            self?.messagesCollectionView.reloadData()
             
             
             
         }
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = super.collectionView(collectionView, cellForItemAt: indexPath)
+        
+        let msg = messages[indexPath.section]
+        if let mediaCell = cell as? MediaMessageCell, msg.type == .image{
+            mediaCell.imageView.sd_setImage(with: msg.storageRef, placeholderImage: UIImage())
+        }
+        
+        return cell
     }
     
 }
@@ -109,6 +116,7 @@ extension ChatViewController : MessagesDataSource{
     func numberOfSections(in messagesCollectionView: MessagesCollectionView) -> Int {
         return messages.count
     }
+    
     
     
 }
