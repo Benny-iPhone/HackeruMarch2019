@@ -10,6 +10,10 @@ import Foundation
 import CoreLocation
 
 extension Activity{
+    var steps : [Step]{
+        return path?.array as? [Step] ?? []
+    }
+    
     var duration : TimeInterval?{
         guard let start = self.startDate, let end = self.endDate else{
             return nil
