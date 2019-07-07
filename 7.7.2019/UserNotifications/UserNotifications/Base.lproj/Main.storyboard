@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UserNotifications" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Notification Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fvl-DI-LkH">
+                                <rect key="frame" x="16" y="36" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moJ-Z2-Diu">
+                                <rect key="frame" x="106" y="82" width="163" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Fire Notification"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rNz-ne-YmO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2k-fm-b3K">
+                                <rect key="frame" x="71" y="147" width="233" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Fire Image Notification">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="makeImageNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V1d-ES-85N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uE-UK-iWv">
+                                <rect key="frame" x="73" y="212" width="229" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Fire Video Notification">
+                                    <color key="titleColor" red="0.39132846850000003" green="1" blue="0.37624669729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="createVideoNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dJ2-qB-eiK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="moJ-Z2-Diu" firstAttribute="centerX" secondItem="fvl-DI-LkH" secondAttribute="centerX" id="9ZB-9K-igK"/>
+                            <constraint firstItem="l2k-fm-b3K" firstAttribute="centerX" secondItem="moJ-Z2-Diu" secondAttribute="centerX" id="Aqi-cT-6Zo"/>
+                            <constraint firstItem="l2k-fm-b3K" firstAttribute="top" secondItem="moJ-Z2-Diu" secondAttribute="bottom" constant="24" id="Hz5-Mk-EQh"/>
+                            <constraint firstItem="fvl-DI-LkH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="MT4-Ei-oXm"/>
+                            <constraint firstItem="moJ-Z2-Diu" firstAttribute="top" secondItem="fvl-DI-LkH" secondAttribute="bottom" constant="16" id="cHO-e9-Wra"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fvl-DI-LkH" secondAttribute="trailing" constant="16" id="cfJ-Z6-Sgb"/>
+                            <constraint firstItem="4uE-UK-iWv" firstAttribute="top" secondItem="l2k-fm-b3K" secondAttribute="bottom" constant="24" id="kbQ-zL-c5Z"/>
+                            <constraint firstItem="fvl-DI-LkH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uP3-XZ-QUE"/>
+                            <constraint firstItem="4uE-UK-iWv" firstAttribute="centerX" secondItem="l2k-fm-b3K" secondAttribute="centerX" id="uwi-x1-U7V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="fvl-DI-LkH" id="GKi-fo-8uC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Event Details View Controller-->
+        <scene sceneID="Wsf-Zl-zaG">
+            <objects>
+                <viewController storyboardIdentifier="EventDetailsViewController" id="5Ep-Ik-5tP" customClass="EventDetailsViewController" customModule="NotificationsExample" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fb1-BL-BA5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXe-z1-Twj">
+                                <rect key="frame" x="132" y="62" width="111" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPo-If-ILg">
+                                <rect key="frame" x="152.5" y="120" width="70" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.87999682739999996" green="0.13498527660000001" blue="0.48694976270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1C-1D-gag">
+                                <rect key="frame" x="16" y="36" width="37" height="30"/>
+                                <state key="normal" title="close"/>
+                                <connections>
+                                    <action selector="backAction:" destination="5Ep-Ik-5tP" eventType="touchUpInside" id="v3z-Fb-nWF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KXe-z1-Twj" firstAttribute="top" secondItem="pFB-9m-6kZ" secondAttribute="top" constant="42" id="2eN-s0-PDv"/>
+                            <constraint firstItem="s1C-1D-gag" firstAttribute="top" secondItem="pFB-9m-6kZ" secondAttribute="top" constant="16" id="3hW-ku-bI7"/>
+                            <constraint firstItem="s1C-1D-gag" firstAttribute="leading" secondItem="pFB-9m-6kZ" secondAttribute="leading" constant="16" id="OXj-Sk-auM"/>
+                            <constraint firstItem="KXe-z1-Twj" firstAttribute="centerX" secondItem="pFB-9m-6kZ" secondAttribute="centerX" id="amX-pG-b8D"/>
+                            <constraint firstItem="oPo-If-ILg" firstAttribute="top" secondItem="KXe-z1-Twj" secondAttribute="bottom" constant="28" id="dB7-jS-05g"/>
+                            <constraint firstItem="oPo-If-ILg" firstAttribute="centerX" secondItem="KXe-z1-Twj" secondAttribute="centerX" id="hzo-x2-6QX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pFB-9m-6kZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="eventIdLabel" destination="oPo-If-ILg" id="l5s-F2-PTJ"/>
+                        <outlet property="titleLabel" destination="KXe-z1-Twj" id="IdR-KI-W61"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ffA-fV-a6w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="786" y="23"/>
+        </scene>
+    </scenes>
+</document>

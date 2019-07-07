@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D504DA122C9192D0088A5D1 /* MapContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D504DA022C9192D0088A5D1 /* MapContainerView.swift */; };
 		6D73052522C3C3BD00D85933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D73052422C3C3BD00D85933 /* AppDelegate.swift */; };
 		6D73052A22C3C3BD00D85933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D73052822C3C3BD00D85933 /* Main.storyboard */; };
 		6D73052D22C3C3BD00D85933 /* Maze.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D73052B22C3C3BD00D85933 /* Maze.xcdatamodeld */; };
@@ -19,9 +20,12 @@
 		6D73054522C3E3B400D85933 /* ActivitiesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D73054422C3E3B400D85933 /* ActivitiesListViewController.swift */; };
 		6D73054722C3E3CE00D85933 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D73054622C3E3CE00D85933 /* ActivityCell.swift */; };
 		6D73054922C3EB8A00D85933 /* Activity+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D73054822C3EB8A00D85933 /* Activity+Utils.swift */; };
+		7DC091BF7D87B9815E42ADD5 /* Pods_Maze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761384B2A50E10B3C90C4779 /* Pods_Maze.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BD37BBC44A7E03E1AC6D522 /* Pods-Maze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maze.release.xcconfig"; path = "Target Support Files/Pods-Maze/Pods-Maze.release.xcconfig"; sourceTree = "<group>"; };
+		6D504DA022C9192D0088A5D1 /* MapContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContainerView.swift; sourceTree = "<group>"; };
 		6D73052122C3C3BD00D85933 /* Maze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D73052422C3C3BD00D85933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D73052922C3C3BD00D85933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -36,6 +40,8 @@
 		6D73054422C3E3B400D85933 /* ActivitiesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesListViewController.swift; sourceTree = "<group>"; };
 		6D73054622C3E3CE00D85933 /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 		6D73054822C3EB8A00D85933 /* Activity+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+Utils.swift"; sourceTree = "<group>"; };
+		761384B2A50E10B3C90C4779 /* Pods_Maze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Maze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4CE30B175D56720D340D7D9 /* Pods-Maze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maze.debug.xcconfig"; path = "Target Support Files/Pods-Maze/Pods-Maze.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DC091BF7D87B9815E42ADD5 /* Pods_Maze.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17B583D3523BB8487D344206 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4CE30B175D56720D340D7D9 /* Pods-Maze.debug.xcconfig */,
+				4BD37BBC44A7E03E1AC6D522 /* Pods-Maze.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		30CB5CD44F6DB78072A54EBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				761384B2A50E10B3C90C4779 /* Pods_Maze.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6D73051822C3C3BD00D85933 = {
 			isa = PBXGroup;
 			children = (
 				6D73052322C3C3BD00D85933 /* Maze */,
 				6D73052222C3C3BD00D85933 /* Products */,
+				17B583D3523BB8487D344206 /* Pods */,
+				30CB5CD44F6DB78072A54EBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				6D73054622C3E3CE00D85933 /* ActivityCell.swift */,
+				6D504DA022C9192D0088A5D1 /* MapContainerView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -116,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D73053622C3C3BF00D85933 /* Build configuration list for PBXNativeTarget "Maze" */;
 			buildPhases = (
+				5200EFF96EF12E3CDDB07B26 /* [CP] Check Pods Manifest.lock */,
 				6D73051D22C3C3BD00D85933 /* Sources */,
 				6D73051E22C3C3BD00D85933 /* Frameworks */,
 				6D73051F22C3C3BD00D85933 /* Resources */,
+				F2E7C074DEBFCC2DBD7F1B92 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -175,6 +204,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5200EFF96EF12E3CDDB07B26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Maze-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2E7C074DEBFCC2DBD7F1B92 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Maze/Pods-Maze-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Maze/Pods-Maze-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Maze/Pods-Maze-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6D73051D22C3C3BD00D85933 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -185,6 +256,7 @@
 				6D73054722C3E3CE00D85933 /* ActivityCell.swift in Sources */,
 				6D73052522C3C3BD00D85933 /* AppDelegate.swift in Sources */,
 				6D73054922C3EB8A00D85933 /* Activity+Utils.swift in Sources */,
+				6D504DA122C9192D0088A5D1 /* MapContainerView.swift in Sources */,
 				6D73053F22C3D8DA00D85933 /* AppManager.swift in Sources */,
 				6D73053B22C3C5FE00D85933 /* DBManager.swift in Sources */,
 				6D73053D22C3D2E800D85933 /* LocationTracker.swift in Sources */,
@@ -332,6 +404,7 @@
 		};
 		6D73053722C3C3BF00D85933 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4CE30B175D56720D340D7D9 /* Pods-Maze.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -349,6 +422,7 @@
 		};
 		6D73053822C3C3BF00D85933 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BD37BBC44A7E03E1AC6D522 /* Pods-Maze.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

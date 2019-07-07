@@ -121,7 +121,7 @@ extension DBManager : IDBManager{
     
     func getAllActivities() -> [Activity] {
         let request : NSFetchRequest<Activity> = Activity.fetchRequest()
-        request.sortDescriptors = [NSSortDescriptor(key: "startDate", ascending: true)]
+        request.sortDescriptors = [NSSortDescriptor(key: "startDate", ascending: false)]
         
         do{
             return try context.fetch(request)

@@ -1,0 +1,6 @@
+framework module Pods_Maze {
+  umbrella header "Pods-Maze-umbrella.h"
+
+  export *
+  module * { export * }
+}

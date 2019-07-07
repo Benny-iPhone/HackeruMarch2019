@@ -61,7 +61,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="yEv-3q-X5L" customClass="ActivityCell" customModule="Maze" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="collapsed_cell" id="yEv-3q-X5L" customClass="ActivityCell" customModule="Maze" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yEv-3q-X5L" id="dIN-Qb-YIW">
@@ -101,6 +101,59 @@
                                             <outlet property="dateLabel" destination="4nC-7Y-cAd" id="tC5-tB-IoD"/>
                                             <outlet property="distanceLabel" destination="Kqg-sD-UoG" id="GY7-fn-G5w"/>
                                             <outlet property="durationLabel" destination="hT7-WQ-uUS" id="CGS-Ds-TUC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="expanded_cell" rowHeight="240" id="xze-ax-lRz" customClass="ActivityCell" customModule="Maze" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="240"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xze-ax-lRz" id="Byc-3P-ECq">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="239.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jes-ME-axR">
+                                                    <rect key="frame" x="16" y="8" width="37" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6b-nJ-2YJ">
+                                                    <rect key="frame" x="16" y="36.5" width="56.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.87999682739999996" green="0.13498527660000001" blue="0.48694976270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Li9-Kj-1Vr">
+                                                    <rect key="frame" x="16" y="61.5" width="54.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N9o-gv-wZ1" customClass="MapContainerView" customModule="Maze" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="86.5" width="343" height="300"/>
+                                                    <color key="backgroundColor" red="0.39132846850000003" green="1" blue="0.37624669729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="300" id="fgs-5G-MzG"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Jes-ME-axR" firstAttribute="leading" secondItem="Byc-3P-ECq" secondAttribute="leading" constant="16" id="0qh-qQ-QIb"/>
+                                                <constraint firstItem="Jes-ME-axR" firstAttribute="top" secondItem="Byc-3P-ECq" secondAttribute="top" constant="8" id="6xU-RX-oHH"/>
+                                                <constraint firstAttribute="trailing" secondItem="N9o-gv-wZ1" secondAttribute="trailing" constant="16" id="7fI-td-9MU"/>
+                                                <constraint firstItem="S6b-nJ-2YJ" firstAttribute="top" secondItem="Jes-ME-axR" secondAttribute="bottom" constant="8" id="H7J-4d-2fP"/>
+                                                <constraint firstAttribute="bottom" secondItem="N9o-gv-wZ1" secondAttribute="bottom" constant="8" id="JdB-GG-VAI"/>
+                                                <constraint firstItem="Li9-Kj-1Vr" firstAttribute="leading" secondItem="S6b-nJ-2YJ" secondAttribute="leading" id="RCc-KW-RQ2"/>
+                                                <constraint firstItem="Li9-Kj-1Vr" firstAttribute="top" secondItem="S6b-nJ-2YJ" secondAttribute="bottom" constant="8" id="aOu-y0-pkl"/>
+                                                <constraint firstItem="N9o-gv-wZ1" firstAttribute="leading" secondItem="Li9-Kj-1Vr" secondAttribute="leading" id="bqF-y0-mq1"/>
+                                                <constraint firstItem="S6b-nJ-2YJ" firstAttribute="leading" secondItem="Jes-ME-axR" secondAttribute="leading" id="cY7-aH-Pgh"/>
+                                                <constraint firstItem="N9o-gv-wZ1" firstAttribute="top" secondItem="Li9-Kj-1Vr" secondAttribute="bottom" constant="8" id="zfh-gi-HTb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="Jes-ME-axR" id="J8U-Mt-H4w"/>
+                                            <outlet property="distanceLabel" destination="S6b-nJ-2YJ" id="qBY-0F-85d"/>
+                                            <outlet property="durationLabel" destination="Li9-Kj-1Vr" id="csy-bq-Mc6"/>
+                                            <outlet property="mapContainerView" destination="N9o-gv-wZ1" id="3dx-7g-b0F"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

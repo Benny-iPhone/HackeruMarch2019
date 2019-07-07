@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D85567122D26755007D91BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85567022D26755007D91BA /* AppDelegate.swift */; };
+		6D85567622D26755007D91BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D85567422D26755007D91BA /* Main.storyboard */; };
+		6D85567822D26757007D91BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D85567722D26757007D91BA /* Assets.xcassets */; };
+		6D85567B22D26757007D91BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D85567922D26757007D91BA /* LaunchScreen.storyboard */; };
+		6D85568322D26855007D91BA /* passengers.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D85568222D26855007D91BA /* passengers.json */; };
+		6D85568522D26887007D91BA /* taxis.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D85568422D26887007D91BA /* taxis.json */; };
+		6D85568822D26895007D91BA /* Passenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85568722D26895007D91BA /* Passenger.swift */; };
+		6D85568A22D2689D007D91BA /* Taxi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85568922D2689D007D91BA /* Taxi.swift */; };
+		6D85568C22D26978007D91BA /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85568B22D26978007D91BA /* DataLoader.swift */; };
+		6D85568E22D2699C007D91BA /* TaxisTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85568D22D2699C007D91BA /* TaxisTableViewController.swift */; };
+		6D85569022D269A7007D91BA /* PassengersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85568F22D269A7007D91BA /* PassengersTableViewController.swift */; };
+		6D85569222D269B0007D91BA /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85569122D269B0007D91BA /* AppModel.swift */; };
+		6D85569622D26A12007D91BA /* TaxiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85569522D26A12007D91BA /* TaxiCell.swift */; };
+		6D85569822D26A1E007D91BA /* PassengerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85569722D26A1E007D91BA /* PassengerCell.swift */; };
+		6D85569A22D26CBC007D91BA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85569922D26CBC007D91BA /* WelcomeViewController.swift */; };
+		6D8556AC22D26DA1007D91BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D8556AA22D26DA1007D91BA /* LaunchScreen.storyboard */; };
+		6D8556B122D26DAA007D91BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85567022D26755007D91BA /* AppDelegate.swift */; };
+		6D8556B222D26DB3007D91BA /* TaxiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85569522D26A12007D91BA /* TaxiCell.swift */; };
+		6D8556B322D26DB3007D91BA /* PassengerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85569722D26A1E007D91BA /* PassengerCell.swift */; };
+		6D8556B422D26DB3007D91BA /* Passenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85568722D26895007D91BA /* Passenger.swift */; };
+		6D8556B522D26DB3007D91BA /* Taxi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85568922D2689D007D91BA /* Taxi.swift */; };
+		6D8556B622D26DB3007D91BA /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85568B22D26978007D91BA /* DataLoader.swift */; };
+		6D8556B722D26DB3007D91BA /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85569122D269B0007D91BA /* AppModel.swift */; };
+		6D8556B822D26DB3007D91BA /* TaxisTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85568D22D2699C007D91BA /* TaxisTableViewController.swift */; };
+		6D8556B922D26DB3007D91BA /* PassengersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85568F22D269A7007D91BA /* PassengersTableViewController.swift */; };
+		6D8556BA22D26DB3007D91BA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85569922D26CBC007D91BA /* WelcomeViewController.swift */; };
+		6D8556BB22D26DBD007D91BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D85567422D26755007D91BA /* Main.storyboard */; };
+		6D8556BC22D26DD7007D91BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D85567722D26757007D91BA /* Assets.xcassets */; };
+		6D8556BF22D26F87007D91BA /* IAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8556BE22D26F87007D91BA /* IAppConfig.swift */; };
+		6D8556C122D26FE0007D91BA /* AppConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8556C022D26FE0007D91BA /* AppConfigs.swift */; };
+		6D8556C222D27033007D91BA /* IAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8556BE22D26F87007D91BA /* IAppConfig.swift */; };
+		6D8556C522D27047007D91BA /* AppConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8556C422D27047007D91BA /* AppConfigs.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6D85566D22D26755007D91BA /* MultipleTargets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultipleTargets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D85567022D26755007D91BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6D85567522D26755007D91BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D85567722D26757007D91BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D85567A22D26757007D91BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D85567C22D26757007D91BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D85568222D26855007D91BA /* passengers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = passengers.json; sourceTree = "<group>"; };
+		6D85568422D26887007D91BA /* taxis.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = taxis.json; sourceTree = "<group>"; };
+		6D85568722D26895007D91BA /* Passenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passenger.swift; sourceTree = "<group>"; };
+		6D85568922D2689D007D91BA /* Taxi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Taxi.swift; sourceTree = "<group>"; };
+		6D85568B22D26978007D91BA /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		6D85568D22D2699C007D91BA /* TaxisTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxisTableViewController.swift; sourceTree = "<group>"; };
+		6D85568F22D269A7007D91BA /* PassengersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengersTableViewController.swift; sourceTree = "<group>"; };
+		6D85569122D269B0007D91BA /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		6D85569522D26A12007D91BA /* TaxiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiCell.swift; sourceTree = "<group>"; };
+		6D85569722D26A1E007D91BA /* PassengerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerCell.swift; sourceTree = "<group>"; };
+		6D85569922D26CBC007D91BA /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		6D85569F22D26D9F007D91BA /* TaxiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaxiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D8556AB22D26DA1007D91BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D8556AD22D26DA1007D91BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D8556BE22D26F87007D91BA /* IAppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAppConfig.swift; sourceTree = "<group>"; };
+		6D8556C022D26FE0007D91BA /* AppConfigs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigs.swift; sourceTree = "<group>"; };
+		6D8556C422D27047007D91BA /* AppConfigs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigs.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D85566A22D26755007D91BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D85569C22D26D9F007D91BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D85566422D26755007D91BA = {
+			isa = PBXGroup;
+			children = (
+				6D85566F22D26755007D91BA /* MultipleTargets */,
+				6D8556A022D26D9F007D91BA /* TaxiApp */,
+				6D85566E22D26755007D91BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D85566E22D26755007D91BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D85566D22D26755007D91BA /* MultipleTargets.app */,
+				6D85569F22D26D9F007D91BA /* TaxiApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D85566F22D26755007D91BA /* MultipleTargets */ = {
+			isa = PBXGroup;
+			children = (
+				6D8556BD22D26F77007D91BA /* AppConfig */,
+				6D85569422D26A01007D91BA /* View */,
+				6D85568622D26889007D91BA /* Model */,
+				6D85567022D26755007D91BA /* AppDelegate.swift */,
+				6D85569322D269F4007D91BA /* view controller */,
+				6D85567422D26755007D91BA /* Main.storyboard */,
+				6D85567722D26757007D91BA /* Assets.xcassets */,
+				6D85567922D26757007D91BA /* LaunchScreen.storyboard */,
+				6D85567C22D26757007D91BA /* Info.plist */,
+				6D85568222D26855007D91BA /* passengers.json */,
+				6D85568422D26887007D91BA /* taxis.json */,
+			);
+			path = MultipleTargets;
+			sourceTree = "<group>";
+		};
+		6D85568622D26889007D91BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D85568722D26895007D91BA /* Passenger.swift */,
+				6D85568922D2689D007D91BA /* Taxi.swift */,
+				6D85568B22D26978007D91BA /* DataLoader.swift */,
+				6D85569122D269B0007D91BA /* AppModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D85569322D269F4007D91BA /* view controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D85568D22D2699C007D91BA /* TaxisTableViewController.swift */,
+				6D85568F22D269A7007D91BA /* PassengersTableViewController.swift */,
+				6D85569922D26CBC007D91BA /* WelcomeViewController.swift */,
+			);
+			path = "view controller";
+			sourceTree = "<group>";
+		};
+		6D85569422D26A01007D91BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D85569522D26A12007D91BA /* TaxiCell.swift */,
+				6D85569722D26A1E007D91BA /* PassengerCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6D8556A022D26D9F007D91BA /* TaxiApp */ = {
+			isa = PBXGroup;
+			children = (
+				6D8556C322D27039007D91BA /* AppConfigs */,
+				6D8556AA22D26DA1007D91BA /* LaunchScreen.storyboard */,
+				6D8556AD22D26DA1007D91BA /* Info.plist */,
+			);
+			path = TaxiApp;
+			sourceTree = "<group>";
+		};
+		6D8556BD22D26F77007D91BA /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				6D8556BE22D26F87007D91BA /* IAppConfig.swift */,
+				6D8556C022D26FE0007D91BA /* AppConfigs.swift */,
+			);
+			path = AppConfig;
+			sourceTree = "<group>";
+		};
+		6D8556C322D27039007D91BA /* AppConfigs */ = {
+			isa = PBXGroup;
+			children = (
+				6D8556C422D27047007D91BA /* AppConfigs.swift */,
+			);
+			path = AppConfigs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D85566C22D26755007D91BA /* MultipleTargets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D85567F22D26757007D91BA /* Build configuration list for PBXNativeTarget "MultipleTargets" */;
+			buildPhases = (
+				6D85566922D26755007D91BA /* Sources */,
+				6D85566A22D26755007D91BA /* Frameworks */,
+				6D85566B22D26755007D91BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultipleTargets;
+			productName = MultipleTargets;
+			productReference = 6D85566D22D26755007D91BA /* MultipleTargets.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D85569E22D26D9F007D91BA /* TaxiApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D8556AE22D26DA1007D91BA /* Build configuration list for PBXNativeTarget "TaxiApp" */;
+			buildPhases = (
+				6D85569B22D26D9F007D91BA /* Sources */,
+				6D85569C22D26D9F007D91BA /* Frameworks */,
+				6D85569D22D26D9F007D91BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaxiApp;
+			productName = TaxiApp;
+			productReference = 6D85569F22D26D9F007D91BA /* TaxiApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D85566522D26755007D91BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = hackeru;
+				TargetAttributes = {
+					6D85566C22D26755007D91BA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					6D85569E22D26D9F007D91BA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 6D85566822D26755007D91BA /* Build configuration list for PBXProject "MultipleTargets" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D85566422D26755007D91BA;
+			productRefGroup = 6D85566E22D26755007D91BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D85566C22D26755007D91BA /* MultipleTargets */,
+				6D85569E22D26D9F007D91BA /* TaxiApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D85566B22D26755007D91BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D85567B22D26757007D91BA /* LaunchScreen.storyboard in Resources */,
+				6D85567822D26757007D91BA /* Assets.xcassets in Resources */,
+				6D85568322D26855007D91BA /* passengers.json in Resources */,
+				6D85568522D26887007D91BA /* taxis.json in Resources */,
+				6D85567622D26755007D91BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D85569D22D26D9F007D91BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D8556AC22D26DA1007D91BA /* LaunchScreen.storyboard in Resources */,
+				6D8556BC22D26DD7007D91BA /* Assets.xcassets in Resources */,
+				6D8556BB22D26DBD007D91BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D85566922D26755007D91BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D85569222D269B0007D91BA /* AppModel.swift in Sources */,
+				6D85569A22D26CBC007D91BA /* WelcomeViewController.swift in Sources */,
+				6D8556BF22D26F87007D91BA /* IAppConfig.swift in Sources */,
+				6D85568E22D2699C007D91BA /* TaxisTableViewController.swift in Sources */,
+				6D85568C22D26978007D91BA /* DataLoader.swift in Sources */,
+				6D8556C122D26FE0007D91BA /* AppConfigs.swift in Sources */,
+				6D85569022D269A7007D91BA /* PassengersTableViewController.swift in Sources */,
+				6D85569822D26A1E007D91BA /* PassengerCell.swift in Sources */,
+				6D85567122D26755007D91BA /* AppDelegate.swift in Sources */,
+				6D85568822D26895007D91BA /* Passenger.swift in Sources */,
+				6D85568A22D2689D007D91BA /* Taxi.swift in Sources */,
+				6D85569622D26A12007D91BA /* TaxiCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D85569B22D26D9F007D91BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D8556B122D26DAA007D91BA /* AppDelegate.swift in Sources */,
+				6D8556B422D26DB3007D91BA /* Passenger.swift in Sources */,
+				6D8556B722D26DB3007D91BA /* AppModel.swift in Sources */,
+				6D8556B822D26DB3007D91BA /* TaxisTableViewController.swift in Sources */,
+				6D8556C222D27033007D91BA /* IAppConfig.swift in Sources */,
+				6D8556C522D27047007D91BA /* AppConfigs.swift in Sources */,
+				6D8556B622D26DB3007D91BA /* DataLoader.swift in Sources */,
+				6D8556B222D26DB3007D91BA /* TaxiCell.swift in Sources */,
+				6D8556B322D26DB3007D91BA /* PassengerCell.swift in Sources */,
+				6D8556BA22D26DB3007D91BA /* WelcomeViewController.swift in Sources */,
+				6D8556B922D26DB3007D91BA /* PassengersTableViewController.swift in Sources */,
+				6D8556B522D26DB3007D91BA /* Taxi.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6D85567422D26755007D91BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D85567522D26755007D91BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6D85567922D26757007D91BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D85567A22D26757007D91BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6D8556AA22D26DA1007D91BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8556AB22D26DA1007D91BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D85567D22D26757007D91BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6D85567E22D26757007D91BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D85568022D26757007D91BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MultipleTargets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackeru.MultipleTargets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D85568122D26757007D91BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MultipleTargets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackeru.MultipleTargets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6D8556AF22D26DA1007D91BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TaxiApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackeru.TaxiApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D8556B022D26DA1007D91BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TaxiApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackeru.TaxiApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D85566822D26755007D91BA /* Build configuration list for PBXProject "MultipleTargets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D85567D22D26757007D91BA /* Debug */,
+				6D85567E22D26757007D91BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D85567F22D26757007D91BA /* Build configuration list for PBXNativeTarget "MultipleTargets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D85568022D26757007D91BA /* Debug */,
+				6D85568122D26757007D91BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D8556AE22D26DA1007D91BA /* Build configuration list for PBXNativeTarget "TaxiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D8556AF22D26DA1007D91BA /* Debug */,
+				6D8556B022D26DA1007D91BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D85566522D26755007D91BA /* Project object */;
+}

@@ -31,7 +31,7 @@ class LocationTracker : NSObject, CLLocationManagerDelegate{
         super.init()
         
         manager.activityType = .fitness
-        manager.distanceFilter = 20
+        manager.distanceFilter = kCLDistanceFilterNone //20
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.delegate = self
     }

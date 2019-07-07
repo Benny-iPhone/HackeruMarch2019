@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D504DAF22C92E050088A5D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D504DAE22C92E050088A5D1 /* AppDelegate.swift */; };
+		6D504DB122C92E050088A5D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D504DB022C92E050088A5D1 /* ViewController.swift */; };
+		6D504DB422C92E050088A5D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D504DB222C92E050088A5D1 /* Main.storyboard */; };
+		6D504DB622C92E060088A5D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D504DB522C92E060088A5D1 /* Assets.xcassets */; };
+		6D504DB922C92E060088A5D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D504DB722C92E060088A5D1 /* LaunchScreen.storyboard */; };
+		A93C23F5C7BBA7C8B43A0F65 /* Pods_AddressAutoComplete.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931E07B814CE1589DEB389A5 /* Pods_AddressAutoComplete.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		42C57A0DD07CD5CF697C0D4F /* Pods-AddressAutoComplete.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddressAutoComplete.release.xcconfig"; path = "Target Support Files/Pods-AddressAutoComplete/Pods-AddressAutoComplete.release.xcconfig"; sourceTree = "<group>"; };
+		6D504DAB22C92E050088A5D1 /* AddressAutoComplete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressAutoComplete.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D504DAE22C92E050088A5D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6D504DB022C92E050088A5D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6D504DB322C92E050088A5D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D504DB522C92E060088A5D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D504DB822C92E060088A5D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D504DBA22C92E060088A5D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		931E07B814CE1589DEB389A5 /* Pods_AddressAutoComplete.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AddressAutoComplete.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC92B9DCCC8EEB3AE65B9DB1 /* Pods-AddressAutoComplete.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddressAutoComplete.debug.xcconfig"; path = "Target Support Files/Pods-AddressAutoComplete/Pods-AddressAutoComplete.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D504DA822C92E050088A5D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A93C23F5C7BBA7C8B43A0F65 /* Pods_AddressAutoComplete.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D504DA222C92E050088A5D1 = {
+			isa = PBXGroup;
+			children = (
+				6D504DAD22C92E050088A5D1 /* AddressAutoComplete */,
+				6D504DAC22C92E050088A5D1 /* Products */,
+				8E3B2A9466B445308964FF3C /* Pods */,
+				BEC9BD32EB94DF75BC9C6B05 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6D504DAC22C92E050088A5D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D504DAB22C92E050088A5D1 /* AddressAutoComplete.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D504DAD22C92E050088A5D1 /* AddressAutoComplete */ = {
+			isa = PBXGroup;
+			children = (
+				6D504DAE22C92E050088A5D1 /* AppDelegate.swift */,
+				6D504DB022C92E050088A5D1 /* ViewController.swift */,
+				6D504DB222C92E050088A5D1 /* Main.storyboard */,
+				6D504DB522C92E060088A5D1 /* Assets.xcassets */,
+				6D504DB722C92E060088A5D1 /* LaunchScreen.storyboard */,
+				6D504DBA22C92E060088A5D1 /* Info.plist */,
+			);
+			path = AddressAutoComplete;
+			sourceTree = "<group>";
+		};
+		8E3B2A9466B445308964FF3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC92B9DCCC8EEB3AE65B9DB1 /* Pods-AddressAutoComplete.debug.xcconfig */,
+				42C57A0DD07CD5CF697C0D4F /* Pods-AddressAutoComplete.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BEC9BD32EB94DF75BC9C6B05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				931E07B814CE1589DEB389A5 /* Pods_AddressAutoComplete.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D504DAA22C92E050088A5D1 /* AddressAutoComplete */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D504DBD22C92E060088A5D1 /* Build configuration list for PBXNativeTarget "AddressAutoComplete" */;
+			buildPhases = (
+				5519D38AFF515EA6A738470F /* [CP] Check Pods Manifest.lock */,
+				6D504DA722C92E050088A5D1 /* Sources */,
+				6D504DA822C92E050088A5D1 /* Frameworks */,
+				6D504DA922C92E050088A5D1 /* Resources */,
+				C78A56EECC9F0F1A8946D466 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AddressAutoComplete;
+			productName = AddressAutoComplete;
+			productReference = 6D504DAB22C92E050088A5D1 /* AddressAutoComplete.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D504DA322C92E050088A5D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = hackeru;
+				TargetAttributes = {
+					6D504DAA22C92E050088A5D1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 6D504DA622C92E050088A5D1 /* Build configuration list for PBXProject "AddressAutoComplete" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D504DA222C92E050088A5D1;
+			productRefGroup = 6D504DAC22C92E050088A5D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D504DAA22C92E050088A5D1 /* AddressAutoComplete */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D504DA922C92E050088A5D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D504DB922C92E060088A5D1 /* LaunchScreen.storyboard in Resources */,
+				6D504DB622C92E060088A5D1 /* Assets.xcassets in Resources */,
+				6D504DB422C92E050088A5D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5519D38AFF515EA6A738470F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AddressAutoComplete-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C78A56EECC9F0F1A8946D466 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AddressAutoComplete/Pods-AddressAutoComplete-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AddressAutoComplete/Pods-AddressAutoComplete-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AddressAutoComplete/Pods-AddressAutoComplete-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D504DA722C92E050088A5D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D504DB122C92E050088A5D1 /* ViewController.swift in Sources */,
+				6D504DAF22C92E050088A5D1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6D504DB222C92E050088A5D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D504DB322C92E050088A5D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6D504DB722C92E060088A5D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D504DB822C92E060088A5D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D504DBB22C92E060088A5D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6D504DBC22C92E060088A5D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D504DBE22C92E060088A5D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC92B9DCCC8EEB3AE65B9DB1 /* Pods-AddressAutoComplete.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AddressAutoComplete/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackeru.AddressAutoComplete;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D504DBF22C92E060088A5D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42C57A0DD07CD5CF697C0D4F /* Pods-AddressAutoComplete.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AddressAutoComplete/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackeru.AddressAutoComplete;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D504DA622C92E050088A5D1 /* Build configuration list for PBXProject "AddressAutoComplete" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D504DBB22C92E060088A5D1 /* Debug */,
+				6D504DBC22C92E060088A5D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D504DBD22C92E060088A5D1 /* Build configuration list for PBXNativeTarget "AddressAutoComplete" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D504DBE22C92E060088A5D1 /* Debug */,
+				6D504DBF22C92E060088A5D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D504DA322C92E050088A5D1 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_AddressAutoComplete {
+  umbrella header "Pods-AddressAutoComplete-umbrella.h"
+
+  export *
+  module * { export * }
+}
