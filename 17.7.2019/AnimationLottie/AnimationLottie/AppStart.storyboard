@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9kj-74-fLQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--App Start View Controller-->
+        <scene sceneID="20T-He-TA0">
+            <objects>
+                <viewController id="9kj-74-fLQ" customClass="AppStartViewController" customModule="AnimationLottie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Nf-1k-q5I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cju-NV-f7U">
+                                <rect key="frame" x="0.0" y="143.5" width="375" height="400"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbv-ED-G9S">
+                                <rect key="frame" x="93" y="68" width="189.5" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cju-NV-f7U" firstAttribute="centerX" secondItem="8pE-zo-EIS" secondAttribute="centerX" id="BDU-Xz-ohm"/>
+                            <constraint firstItem="cju-NV-f7U" firstAttribute="width" secondItem="9Nf-1k-q5I" secondAttribute="width" id="acO-zz-mGn"/>
+                            <constraint firstItem="cju-NV-f7U" firstAttribute="height" secondItem="9Nf-1k-q5I" secondAttribute="height" multiplier="0.6" id="n04-xY-h0U"/>
+                            <constraint firstItem="Rbv-ED-G9S" firstAttribute="top" secondItem="8pE-zo-EIS" secondAttribute="top" constant="48" id="nGN-jX-5HR"/>
+                            <constraint firstItem="cju-NV-f7U" firstAttribute="centerY" secondItem="8pE-zo-EIS" secondAttribute="centerY" id="neT-yg-KQw"/>
+                            <constraint firstItem="Rbv-ED-G9S" firstAttribute="centerX" secondItem="8pE-zo-EIS" secondAttribute="centerX" id="ouh-fb-fmo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8pE-zo-EIS"/>
+                    </view>
+                    <connections>
+                        <outlet property="animationContainerView" destination="cju-NV-f7U" id="rpE-ko-cmr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J46-ZB-KtL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="177"/>
+        </scene>
+    </scenes>
+</document>

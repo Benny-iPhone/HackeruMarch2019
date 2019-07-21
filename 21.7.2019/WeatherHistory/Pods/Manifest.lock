@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.8.2)
+  - FSCalendar (2.8.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - FSCalendar
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - FSCalendar
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
+
+PODFILE CHECKSUM: 428aa28906f08ad0df40f50490ff2276c4f63797
+
+COCOAPODS: 1.7.1
